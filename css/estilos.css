@@ -1,0 +1,133 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: -webkit-linear-gradient(90deg, red, black); */
+}
+.nav {
+  text-align: center;
+  background-color: #9bebd8;
+}
+/* aqui cominza el main */
+
+.main-cont {
+  display: grid;
+  grid-template-columns: minmax(auto, 1200px);
+  justify-content: center;
+  background-color: black;
+}
+.main {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: "te corazon corazon mi" "amo corazon corazon vida";
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  /* text-align: center; */
+  justify-items: center;
+  padding: 5%;
+}
+.main-te {
+  grid-area: te;
+}
+.main-corazon {
+  grid-area: corazon;
+}
+.main-corazon img {
+  width: 100%;
+  height: 100%;
+}
+.main-mi {
+  grid-area: mi;
+}
+.main-amo {
+  grid-area: amo;
+}
+.main-vida {
+  grid-area: vida;
+}
+
+/* aqui comienza las section hapy */
+.hapy-detail {
+  text-align: center;
+  margin: 3%;
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+ /* aqui comieza la section love */
+ .love {
+   background-color: black;
+   padding: 5%;
+   color: white;
+   text-align: center;
+ }
+ .love-article {
+   margin-top: 10%;
+   font-size: 20px;
+ }
+ .love-article figure {
+   margin: auto;
+ }
+ .love-article figure img {
+   text-align: center;
+ }
+ .love-article-img2 {
+   width: 160px;
+ }
+ .love2 {
+   background-color:  #0BCDDB;
+ }
+ .love2 .love-article p {
+   letter-spacing: 5px;
+ }
+ .love-img2 {
+   margin: 0;
+ }
+
+ /* aqui empiesa loli */
+ .loli {
+   padding: 5%;
+   display: grid;
+   grid-template-columns: minmax(auto, 1200px);
+   justify-content: center;
+ }
+ .loli-article {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #E6E6E6;
+ }
+ .loli-art {
+   background-color: white;
+ }
+ .loli-article figure {
+   margin: 0;
+   margin-right: 15px;
+ }
+
+ /* AQUI COMIENZA EL FOOTER */
+ .footer {
+   background-color: black;
+   padding: 5%;
+   color: wheat;
+   letter-spacing: 5px;
+ }
+ 
+
+
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-gap: 15px;
+    /* grid-template-areas: "te corazon corazon mi" "amo corazon corazon vida"; */
+    grid-template-areas: "corazon corazon corazon corazon" ". te amo ." ". mi vida .";
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav img {
+    width: 90%;
+  }
+  .main p {
+    font-size: 60%;
+  }
+}
